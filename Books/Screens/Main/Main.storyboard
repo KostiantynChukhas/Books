@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MainViewController" customModule="StartProjectsMVVM___C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OvF-Vt-JuS">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xhd-f6-oCo">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5j9-LR-4Wl">
+                                <rect key="frame" x="0.0" y="48" width="414" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVh-cm-Qxy">
+                                        <rect key="frame" x="24" y="6" width="66" height="28"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                        <color key="textColor" red="0.81568627450980391" green="0.0" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="kVh-cm-Qxy" firstAttribute="leading" secondItem="5j9-LR-4Wl" secondAttribute="leading" constant="24" id="gL1-kb-4Hm"/>
+                                    <constraint firstItem="kVh-cm-Qxy" firstAttribute="centerY" secondItem="5j9-LR-4Wl" secondAttribute="centerY" id="hfg-s1-21C"/>
+                                    <constraint firstAttribute="height" constant="40" id="tCa-GS-z9S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OvF-Vt-JuS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="42p-ci-Pxq"/>
+                            <constraint firstItem="5j9-LR-4Wl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4rL-Fw-wSl"/>
+                            <constraint firstItem="OvF-Vt-JuS" firstAttribute="top" secondItem="5j9-LR-4Wl" secondAttribute="bottom" constant="16" id="Euo-Ub-vqL"/>
+                            <constraint firstItem="OvF-Vt-JuS" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="QzY-Nr-880"/>
+                            <constraint firstItem="5j9-LR-4Wl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Zmg-bK-Jwa"/>
+                            <constraint firstItem="5j9-LR-4Wl" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="aBL-3f-R70"/>
+                            <constraint firstItem="OvF-Vt-JuS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dcE-js-qBY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="OvF-Vt-JuS" id="qOf-jP-x2T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

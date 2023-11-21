@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCollectionViewCell" customModule="StartProjectsMVVM___C" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qN6-eu-5Op">
+                        <rect key="frame" x="0.0" y="0.0" width="121" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="xFu-5H-5Uo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devili’s Night Bride" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdG-nE-aDz">
+                        <rect key="frame" x="0.0" y="154" width="121" height="43.666666666666657"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="QdG-nE-aDz" firstAttribute="top" secondItem="qN6-eu-5Op" secondAttribute="bottom" constant="4" id="5ZK-Mu-4vh"/>
+                <constraint firstItem="QdG-nE-aDz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="68f-i3-18m"/>
+                <constraint firstItem="qN6-eu-5Op" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7uq-MD-l5l"/>
+                <constraint firstAttribute="trailing" secondItem="qN6-eu-5Op" secondAttribute="trailing" id="9s3-h4-6Yu"/>
+                <constraint firstItem="qN6-eu-5Op" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IIj-Th-13H"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QdG-nE-aDz" secondAttribute="bottom" id="Wt5-AY-bn2"/>
+                <constraint firstAttribute="trailing" secondItem="QdG-nE-aDz" secondAttribute="trailing" id="XaD-7b-ZHU"/>
+            </constraints>
+            <size key="customSize" width="121" height="198"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="QdG-nE-aDz" id="Fo6-Yx-39T"/>
+                <outlet property="imgView" destination="qN6-eu-5Op" id="gOC-AE-ddn"/>
+            </connections>
+            <point key="canvasLocation" x="193.12977099236642" y="71.83098591549296"/>
+        </collectionViewCell>
+    </objects>
+</document>

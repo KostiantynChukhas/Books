@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CaruselDetailCollectionViewCell" customModule="StartProjectsMVVM___C" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="333"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="203" height="333"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erF-bJ-rzQ">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="333"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-C5-wbT">
+                                <rect key="frame" x="0.0" y="0.0" width="203" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="gTf-aO-oMH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If It’s Only Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uy-jq-OoA">
+                                <rect key="frame" x="10" y="266" width="183" height="27.333333333333314"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoey Evers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-q4-gHP">
+                                <rect key="frame" x="10" y="297.33333333333331" width="183" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cRp-q4-gHP" firstAttribute="top" secondItem="1Uy-jq-OoA" secondAttribute="bottom" constant="4" id="6VF-zL-N1M"/>
+                            <constraint firstItem="cRp-q4-gHP" firstAttribute="leading" secondItem="erF-bJ-rzQ" secondAttribute="leading" constant="10" id="8a6-ZJ-UcE"/>
+                            <constraint firstAttribute="trailing" secondItem="vaI-C5-wbT" secondAttribute="trailing" id="CTj-vK-j6y"/>
+                            <constraint firstItem="vaI-C5-wbT" firstAttribute="top" secondItem="erF-bJ-rzQ" secondAttribute="top" id="NXy-ib-AEW"/>
+                            <constraint firstAttribute="trailing" secondItem="cRp-q4-gHP" secondAttribute="trailing" constant="10" id="QWO-63-CuZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1Uy-jq-OoA" secondAttribute="trailing" constant="10" id="UOh-0w-Dzr"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cRp-q4-gHP" secondAttribute="bottom" constant="8" id="VFl-Nb-EBO"/>
+                            <constraint firstItem="1Uy-jq-OoA" firstAttribute="leading" secondItem="erF-bJ-rzQ" secondAttribute="leading" constant="10" id="Ypt-yg-3NA"/>
+                            <constraint firstItem="1Uy-jq-OoA" firstAttribute="top" secondItem="vaI-C5-wbT" secondAttribute="bottom" constant="16" id="jxk-mO-JEi"/>
+                            <constraint firstItem="vaI-C5-wbT" firstAttribute="leading" secondItem="erF-bJ-rzQ" secondAttribute="leading" id="vJq-9V-p68"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="erF-bJ-rzQ" secondAttribute="bottom" id="3jW-Ao-Bey"/>
+                <constraint firstItem="erF-bJ-rzQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WWQ-YB-rHB"/>
+                <constraint firstItem="erF-bJ-rzQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dJC-z3-2Yf"/>
+                <constraint firstAttribute="trailing" secondItem="erF-bJ-rzQ" secondAttribute="trailing" id="rxe-Hf-di4"/>
+            </constraints>
+            <size key="customSize" width="203" height="333"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="cRp-q4-gHP" id="2Y6-b5-ODe"/>
+                <outlet property="imgView" destination="vaI-C5-wbT" id="xIb-PR-r5R"/>
+                <outlet property="nameLabel" destination="1Uy-jq-OoA" id="V2D-ok-VVF"/>
+            </connections>
+            <point key="canvasLocation" x="255.72519083969465" y="119.36619718309859"/>
+        </collectionViewCell>
+    </objects>
+</document>
